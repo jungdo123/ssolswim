@@ -32,36 +32,29 @@
 							</td>
 						
 					</tr>
+					
 					<tr>
-                <th>상품: </th>
-                <td><input type="text" cols="10" placeholder="상품을 입력하세요 " name="content" class="form-control"/></td>
+                <th>영화관: </th>
+                <td><input type="text" cols="10" placeholder="영화관을 입력하세요. " name="content" class="form-control"/></td>
             </tr>
             <tr>
-                <th>가격: </th>
-                <td><input type="text" placeholder="" name="filename" class="form-control"/></td>
+                <th>상영관: </th>
+                <td><input type="text" placeholder="상영관을 입력하세요." name="filename" class="form-control"/></td>
             </tr>
             <tr>
-                <th>거래처  </th>
-                <td><input type="text" placeholder="" class="form-control"/></td>
+                <th>영화제목 : </th>
+                <td><input type="text" placeholder="영화제목을 입력하세요." class="form-control"/></td>
                 
             </tr>
               <tr>
-                <th>거래처코드  </th>
-                <td><input type="text" placeholder="" class="form-control"/></td>
+                <th>좌석번호  </th>
+                <td><input type="text" placeholder="좌석번호를 입력하세요." class="form-control"/></td>
             </tr>
               <tr>
-                <th>담당자명  </th>
-                <td><input type="text" placeholder="" class="form-control"/></td>
-                
+                <th>영화장르  </th>
+                <td><input type="text" placeholder="영화장르를 입력하세요" class="form-control"/></td>                
             </tr>
-              <tr>
-                <th>연락처  </th>
-                <td><input type="text" placeholder="" class="form-control"/></td>
-            </tr>
-              <tr>
-                <th>설명  </th>
-                <td><input type="text" placeholder="" class="form-control"/></td>
-            </tr>
+           
             <tr>
                 <td colspan="2">
                     <input type="button" value="등록" onclick="sendData()" class="pull-right"/>
