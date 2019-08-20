@@ -1,8 +1,8 @@
-package Command;
+package Model.DTO;
 
 import java.sql.Timestamp;
 
-public class MemberJoinCommand {
+public class Member {
 	private String memberId;
 	private String memberPw;
 	private Integer memberNum;
@@ -87,4 +87,5 @@ public class MemberJoinCommand {
 	public void setMemberReg(Timestamp memberReg) {
 		this.memberReg = memberReg;
 	}
+	
 }

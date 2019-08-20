@@ -8,7 +8,7 @@
 			"	
 >
 	<bean id = "memberJoinService" class="Service.MemberJoinService" />
-
+	<bean id = "sessionRepository" class="Repository.SessionRepository" />
 
 
 </beans>

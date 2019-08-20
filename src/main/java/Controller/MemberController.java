@@ -1,5 +1,6 @@
 package Controller;
 
+import org.apache.tomcat.util.json.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,17 +22,6 @@ public class MemberController {
 		System.out.println("aaaaa");
 		return "MemberView/memberJoin";
 	}
-	@RequestMapping(value = "/MemberJoin", method = RequestMethod.POST)
-	public String joinMember(Model model,
-			@RequestParam(value = "agree", defaultValue = "false")
-			boolean chk) {
-		if(chk) {
-			model.addAttribute("memberJoinCommand" , new MemberJoinCommand());
-			return "MemberView/memberForm";
-		}else {
-			return "MemberView/terms";
-		}
-	}
 	
 	@RequestMapping(value = "/MemberJoinAction", method = RequestMethod.POST)
 	public String memberJoinAction(Model model, MemberJoinCommand 
@@ -44,6 +34,12 @@ public class MemberController {
 		   path = 
 				memberJoinService.memberInsert(model, memberJoinCommand);
 		}catch(Exception e) { }*/
+		try {
+			path = memberJoinService.memberInsert(model, memberJoinCommand);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return path;
 	}
 }
