@@ -3754,7 +3754,7 @@ input, select, textarea {
 								       <ul>
 										<li>
 										<%if(session.getAttribute("memid")==null) { %>
-           								<a href="mainView.naver">Log In</a>
+           								<a href="#">Log In</a>
        									<%}else { %>
           								<a  href="/OurArtGallery/memberInfo.naver">${memid } 님 환영합니다 </a>
           								<a  href="/OurArtGallery/Logout.naver">Log Out</a>
@@ -3766,7 +3766,7 @@ input, select, textarea {
 								         <li>
 											         			         
 										
-								  <a id="#services" href="#">Services</a>
+								  <a id="#services" href="moveReg">Sign Up</a>
 								   <ul>
 								    <li><a href="#">aaa</a></li>
 								    <li><a href="#">bbb</a></li>
