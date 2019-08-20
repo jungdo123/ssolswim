@@ -6,9 +6,9 @@ public class Member {
 	private String memberId;
 	private String memberPw;
 	private Integer memberNum;
-	private String memberBir;
+	private Timestamp memberBir;
 	private String memberName;
-	private String memberGender;
+	private Integer memberGender;
 	private String memberPh;
 	private String interests;
 	private String addr;
@@ -33,10 +33,10 @@ public class Member {
 	public void setMemberNum(Integer memberNum) {
 		this.memberNum = memberNum;
 	}
-	public String getMemberBir() {
+	public Timestamp getMemberBir() {
 		return memberBir;
 	}
-	public void setMemberBir(String memberBir) {
+	public void setMemberBir(Timestamp memberBir) {
 		this.memberBir = memberBir;
 	}
 	public String getMemberName() {
@@ -45,10 +45,10 @@ public class Member {
 	public void setMemberName(String memberName) {
 		this.memberName = memberName;
 	}
-	public String getMemberGender() {
+	public Integer getMemberGender() {
 		return memberGender;
 	}
-	public void setMemberGender(String memberGender) {
+	public void setMemberGender(Integer memberGender) {
 		this.memberGender = memberGender;
 	}
 	public String getMemberPh() {

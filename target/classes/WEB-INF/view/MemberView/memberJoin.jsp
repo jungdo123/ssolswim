@@ -115,7 +115,7 @@
 				<tr>
 					<th id="title"><br/>아이디</th>
 					<td>
-						<input type="text" name="id" id = "id" maxlength="50">
+						<form:input path="id1" id = "id1" maxlength="50"/>
 						<input type="button" value="중복확인" id="confirmId">	
 						<input type="hidden" name="idDuplication" value="idUncheck" >
 					</td>
@@ -124,28 +124,29 @@
 				<tr>
 					<th id="title">비밀번호</th>
 					<td>
-						<input type="password" id = "pw" name="password" maxlength="50">
+						<form:password path="pw" id = "pw"  maxlength="50"/>
 					</td>
 				</tr>
 				
 				<tr>
 					<th id="title">비밀번호 확인</th>
 					<td>
-						<input type="password" id = "pw1" name="passwordcheck" maxlength="50">
+						<form:password path="pwCon" id = "pwCon" maxlength="50"/>
 					</td>
 				</tr>
 					
 				<tr>
 					<th id="title">이름</th>
 					<td>
-						<input type="text" id = "userName" name="name" maxlength="50">
+						<form:input path="userName" id = "userName" maxlength="50"/>
 					</td>
 				</tr>
 					
 				<tr><th>생년월일-성별</th>
 					<td>
-						<input type="text" name="MemberBir" style="width:45%" id="memberBir" maxlength="6" minlength="6"  placeholder="예:960202" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/>
-						 &nbsp- &nbsp<input type="text" name="gender" id="gender" maxlength="1" placeholder="1" style="width:10%"; />
+						<form:input path="memberBir" id="memberBir" style="width:45%"  maxlength="6" minlength="6"  
+						placeholder="예:960202" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/>
+						 &nbsp- &nbsp<form:input path="gender" id="gender" maxlength="1" placeholder="1" style="width:10%"; />
 					&nbsp*&nbsp *&nbsp *&nbsp * &nbsp*&nbsp *
 					</td>
 				</tr><tr></tr>
@@ -153,7 +154,7 @@
 				<tr>
 					<th id="title">이메일</th>
 					<td>
-						<input type="text" name="mail1" id="email"style="width:51%" maxlength="50">&nbsp@&nbsp
+						<form:input path="email" id="email"style="width:51%" maxlength="50"/>&nbsp@&nbsp
 						<select name="mail2" id="email" style="width:45%">
 							<option>naver.com</option>
 							<option>daum.net</option>
@@ -166,7 +167,7 @@
 				<tr>
 					<th id="title">휴대전화</th>
 					<td>
-						<input type="text" id ="memberPh" name="phone" maxlength="11" minlength ="10"/>
+						<form:input path="memberPh" id ="memberPh" maxlength="11" minlength ="10"/>
 					</td>
 				</tr>
 				<tr>

@@ -25,7 +25,7 @@ public class MemberController {
 	
 	@RequestMapping(value = "/MemberJoinAction", method = RequestMethod.POST)
 	public String memberJoinAction(Model model, MemberJoinCommand 
-			memberJoinCommand, Errors errors) {
+			memberJoinCommand, Errors errors) throws java.text.ParseException {
 		String path="";
 		//new RegisterRequestValidator().validate(
 				//memberJoinCommand, errors); 

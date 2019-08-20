@@ -3,35 +3,37 @@ package Command;
 import java.sql.Timestamp;
 
 public class MemberJoinCommand {
-	private String memberId;
-	private String memberPw;
-	private Integer memberNum;
+	private String id1;
+	private String pw;
+	private String pwCon;
+	private String userName;
 	private String memberBir;
-	private String memberName;
-	private String memberGender;
-	private String memberPh;
-	private String interests;
-	private String addr;
+	private Integer gender;
 	private String email;
-	private String memberGrade;
-	private Timestamp memberReg;
-	public String getMemberId() {
-		return memberId;
+	private String memberPh;
+	public String getId1() {
+		return id1;
 	}
-	public void setMemberId(String memberId) {
-		this.memberId = memberId;
+	public void setId1(String id1) {
+		this.id1 = id1;
 	}
-	public String getMemberPw() {
-		return memberPw;
+	public String getPw() {
+		return pw;
 	}
-	public void setMemberPw(String memberPw) {
-		this.memberPw = memberPw;
+	public void setPw(String pw) {
+		this.pw = pw;
 	}
-	public Integer getMemberNum() {
-		return memberNum;
+	public String getPwCon() {
+		return pwCon;
 	}
-	public void setMemberNum(Integer memberNum) {
-		this.memberNum = memberNum;
+	public void setPwCon(String pwCon) {
+		this.pwCon = pwCon;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 	public String getMemberBir() {
 		return memberBir;
@@ -39,35 +41,11 @@ public class MemberJoinCommand {
 	public void setMemberBir(String memberBir) {
 		this.memberBir = memberBir;
 	}
-	public String getMemberName() {
-		return memberName;
+	public Integer getGender() {
+		return gender;
 	}
-	public void setMemberName(String memberName) {
-		this.memberName = memberName;
-	}
-	public String getMemberGender() {
-		return memberGender;
-	}
-	public void setMemberGender(String memberGender) {
-		this.memberGender = memberGender;
-	}
-	public String getMemberPh() {
-		return memberPh;
-	}
-	public void setMemberPh(String memberPh) {
-		this.memberPh = memberPh;
-	}
-	public String getInterests() {
-		return interests;
-	}
-	public void setInterests(String interests) {
-		this.interests = interests;
-	}
-	public String getAddr() {
-		return addr;
-	}
-	public void setAddr(String addr) {
-		this.addr = addr;
+	public void setGender(Integer gender) {
+		this.gender = gender;
 	}
 	public String getEmail() {
 		return email;
@@ -75,16 +53,11 @@ public class MemberJoinCommand {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getMemberGrade() {
-		return memberGrade;
+	public String getMemberPh() {
+		return memberPh;
 	}
-	public void setMemberGrade(String memberGrade) {
-		this.memberGrade = memberGrade;
+	public void setMemberPh(String memberPh) {
+		this.memberPh = memberPh;
 	}
-	public Timestamp getMemberReg() {
-		return memberReg;
-	}
-	public void setMemberReg(Timestamp memberReg) {
-		this.memberReg = memberReg;
-	}
+	
 }

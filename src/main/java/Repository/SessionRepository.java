@@ -4,10 +4,13 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import Model.DTO.Member;
+
 @Repository
 public class SessionRepository {
 	@Autowired
 	private SqlSession sqlSession;
+	private final String namespace = "MemberMapper";
 	/*
 	private final String namespace = "MemberMapper";
 	public List<String> selectEmail(){
@@ -105,5 +108,12 @@ public class SessionRepository {
 		String statement =  namespace + ".memberInsert"; 
 		sqlSession.insert(statement, member);
 	}
-*/	
+*/
+
+	public void insertMember(Member member) {
+		// TODO Auto-generated method stub
+		String statement = namespace + ".memberInsert";
+		sqlSession.insert(statement, member);
+		
+	}	
 }

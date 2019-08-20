@@ -27,16 +27,20 @@ public class MemberJoinService {
 		this.member = member;
 	}
 	public String memberInsert(Model model, MemberJoinCommand mjc) 
-			throws ParseException{
+			throws ParseException, java.text.ParseException{
 		// TODO Auto-generated method stub
-		member.setAddr(mjc.getAddr());
 		member.setEmail(mjc.getEmail());
-		member.setMemberGender(mjc.getMemberGender());
-		member.setMemberBir(mjc.getMemberBir());
-		member.setMemberId(mjc.getMemberId());
-		member.setMemberName(mjc.getMemberName());
+		member.setMemberGender(mjc.getGender());
+		
+		date = dt.parse(mjc.getMemberBir());
+		tst = new Timestamp(date.getTime());
+		member.setMemberBir(tst);
+		
+		member.setMemberId(mjc.getId1());
+		member.setMemberName(mjc.getUserName());
 		member.setMemberPh(mjc.getMemberPh());
-		member.setMemberPw(mjc.getMemberPw());
+		member.setMemberPw(mjc.getPw());
+		sessionRepository.insertMember(member);
 		path = "MemberView/Main";
 		return path;
 	}
