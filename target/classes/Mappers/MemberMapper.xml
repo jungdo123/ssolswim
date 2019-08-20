@@ -10,3 +10,5 @@
 		values (mem_seq.nextval, #{memberName},#{memberBir},#{memberPh1}, #{memberPh2}
 		, #{email}, #{addr},#{gender}, #{memberId}, #{memberPw}, sysdate )
 	</insert>
+	
+</mapper>
