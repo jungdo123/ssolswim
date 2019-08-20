@@ -24,7 +24,5 @@ public class GoodsController {
 				GoodsWriteService.memberInsert(model, GoodsCommand);
 		}catch(Exception e) { }*/
 		return path;
-	}
-	
+	}	
 }
-
